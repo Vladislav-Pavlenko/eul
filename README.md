@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EGL - Лендінг експедиторських послуг
 
-## Getting Started
+Офіційний вебсайт-візитка для компанії EGL. Проєкт створений для залучення нових клієнтів, демонстрації послуг вантажоперевезень та швидкого зв'язку з менеджерами.
 
-First, run the development server:
+## Tech stack
+- **Фреймворк:** [Next.js](https://nextjs.org/) (App Router)
+- **Бібліотека:** [React](https://react.js.org/)
+- **Стилізація:** CSS Modules 
+- **Форматування коду:** Prettier
 
+## Getting started
+
+Щоб розгорнути проєкт на своєму комп'ютері, виконайте наступні кроки:
+1. **Клонуйте репозиторій:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+git clone https://github.com/Vladislav-Pavlenko/egl.git
 ```
+2. **Перейдіть у папку проєкту:**
+```bash
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+cd egl
+```
+3. **Встановіть залежності:**
+```bash
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# yarn install / pnpm install
+```
+4. **Запустіть сервер для розробки:**
+```bash
 
-## Learn More
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# yarn dev / pnpm dev
+```
+5. Відкрийте http://localhost:3000 у вашому браузері, щоб побачити результат.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+### EGL
+├── 📂 public
+│    └── 📂 image  
+├── 📂 src
+│    └── 📂 app
+│        ├──  📂 components   
+│        ├──  📂 fonts 
+│        │    └── 📄 LiberationMono.woff2
+│        ├──  📄 globals.css  
+│        ├──  📄 layout.css
+│        ├──  📄 page.module.css 
+│        ├──  📄 page.tsx    
+│        └──  📄 reset.css  
+├── 📄 .gitignore
+├── 📄 .prettierrc
+├── 📄 eslint.config.mjs
+├── 📄 next.config.ts
+├── 📄 next-env.d.ts
+├── 📄 package.json
+├── 📄 package-lock.json
+├── 📄 README.md
+└── 📄 tsconfig.json
+```
