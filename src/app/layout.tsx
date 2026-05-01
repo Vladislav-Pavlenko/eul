@@ -15,8 +15,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'EGL',
-  description: 'Elite Global Logistics',
+  title: 'EUL',
+  description: 'Elite Ukraine Logistics',
 };
 
 export default function RootLayout({
