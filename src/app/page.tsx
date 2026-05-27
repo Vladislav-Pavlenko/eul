@@ -2,6 +2,7 @@ import styles from './page.module.css';
 import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import Models from '@/components/Models/Models';
+import Mission from '@/components/Mission/Mission';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Models />
+      <Mission />
     </main>
   );
 }
