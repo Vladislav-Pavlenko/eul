@@ -5,6 +5,7 @@ import Models from '@/components/Models/Models';
 import Mission from '@/components/Mission/Mission';
 import Careers from '@/components/Careers/Careers';
 import Board from '@/components/Board/Board';
+import Contacts from '@/components/Contacts/Contacts';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Mission />
       <Careers />
       <Board />
+      <Contacts />
     </main>
   );
 }
