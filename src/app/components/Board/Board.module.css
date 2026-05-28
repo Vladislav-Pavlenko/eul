@@ -68,12 +68,23 @@
 
     border-radius: 200px;
     border: 1px solid #FFF;
+    transition: 200ms ease-in-out;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    &:hover,
+    &:focus{
+        width: 140px;
+        height: 140px;
+        padding: 0px;
+        bottom: 70px;
+        right: 130px;
+    }
 }
 
 .primary_button{
-
     display: flex;
     align-items: center;
     justify-content: center;
