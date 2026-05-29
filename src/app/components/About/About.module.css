@@ -6,7 +6,7 @@
 }
 
 .main_container{
-    width: 480px;
+    width: 580px;
 }
 
 .tiny_text{
@@ -108,11 +108,13 @@
 
 .image{
     border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .location{
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 20px;
 
     display: flex;
