@@ -1,0 +1,139 @@
+.reviews{
+    padding: 40px 0 80px;
+}
+
+.main_container{
+    padding: 20px 0;
+    margin: 0 100px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 14px;
+    line-height: 1.2;
+    width: 290px;
+}
+
+.link{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #194B6B;
+    width: 108px;
+    height: 36px;
+
+    transition: 350ms ease-in-out;
+
+    &:hover,
+    &:focus{
+        background-color: rgb(1, 98, 140);
+    }
+}
+
+.link_name{
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.link_icon{
+    fill: #fff;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    width: 100%;
+    padding-bottom: 20px;
+
+    scroll-behavior: smooth;
+
+    transition: 350ms ease-in-out;
+}
+
+.list::-webkit-scrollbar {
+    height: 5px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 20px;
+    margin-inline: 100px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #194b6b;
+    border-radius: 20px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: rgb(1, 98, 140);
+}
+
+.list_item {
+    flex: 0 0 330px;
+    height: 176px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+    border-radius: 20px;
+    background: #f2f2f2;
+}
+
+.list_item_description{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.item_container{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item_container_image{
+    border-radius: 28px;
+    border: 1px solid #FFF;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.item_user_container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.item_user_container_name{
+    font-size: 12px;
+    line-height: 1;
+}
+
+.item_user_list{
+    display: flex;
+    gap: 4px;
+}
+
+.item_user_list_icon{
+    fill: #FF4E26;
+}
