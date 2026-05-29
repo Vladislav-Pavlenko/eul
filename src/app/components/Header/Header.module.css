@@ -20,11 +20,11 @@
     &:hover,
     &:focus{
         .logo_icon{
-            fill: rgba(255, 255, 255, 0.20);
+            fill: #014C6B;
         }
 
         .logo_title{
-            color: rgba(255, 255, 255, 0.20);
+            color: #014C6B;
         }
     }
 
@@ -64,7 +64,7 @@
 
     &:hover,
     &:focus{
-        color: rgba(255, 255, 255, 0.80);
+        color: #014C6B;
     }
 }
 
