@@ -1,13 +1,13 @@
 .header{
     border-radius: 60px;
     border: 1px solid #FFF;
-    background: rgba(255, 255, 255, 0.20);
-    width: calc(100vw - 80px);
+    background: rgba(255, 255, 255, 0.15);
+    width: calc(100vw - 40px);
     padding: 10px;
     display: flex;
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
 }
 
 .logo_link{
@@ -19,28 +19,27 @@
 
     &:hover,
     &:focus{
-        .logo_icon{
-            fill: #014C6B;
-        }
-
         .logo_title{
-            color: #014C6B;
+            color: #fff;
         }
     }
 
 }
 
-.logo_icon{
-    fill: #FFFFFF;
-    transition: 350ms ease-in-out;
+.logo{
+    border-radius: 5px;
+    width: auto;
+    height: auto;
 }
 
 .logo_title{
-    color: #FFF;
-    font-size: 14px;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 24px;
     letter-spacing: 0.28px;
 
-    transition: 350ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
 
 .nav{
@@ -89,7 +88,7 @@
 .search_input{
     border: none;
     background: none;
-    width: 46px;
+    width: 54px;
     transition: 350ms ease-in-out;
 
     &:focus{

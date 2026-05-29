@@ -2,19 +2,28 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 20px;
     padding: 40px 40px 40px 40px;
-    border-radius: 10px;
     /*noinspection CssUnknownTarget*/
-    background: url("/image/hero-background.jpg") bottom center / cover no-repeat, #9bb8d0;
-    height: calc(100vh - 40px);
+    background:
+            linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.55) 0%,
+                    rgba(0, 0, 0, 0.35) 45%,
+                    rgba(0, 0, 0, 0.1) 100%
+            ),
+            url("/image/hero-background.png") bottom center / cover no-repeat,
+            #9bb8d0;
+    height: 100vh;
 }
 
 .main_container{
-    max-width: 519px;;
+    max-width: 569px;
+   height: 100%;
+
 }
 
 .title{
+    margin-top: 100px;
     color: #FFF;
     font-size: 44px;
     font-weight: 900;
@@ -66,8 +75,9 @@
 }
 
 .card{
+    display: none;
     padding: 20px;
-    display: flex;
+    /*display: flex;*/
     gap: 20px;
     border-radius: 10px;
     background: #FFF;
@@ -97,6 +107,7 @@
 }
 
 .list{
+    display: none;
     position: relative;
 }
 

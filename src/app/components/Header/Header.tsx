@@ -1,35 +1,45 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Header.module.css';
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <Link className={styles.logo_link} href="/">
-        <svg className={styles.logo_icon} width="24" height="24">
-          <use href="/image/icons.svg#icon-delivery_truck"></use>
-        </svg>
-        <span className={styles.logo_title}>Duozhuamiao</span>
+        <Image
+          className={styles.logo}
+          src="/image/mini-logo.png"
+          alt="logo"
+          width="32"
+          height="32"
+        />
+        <span className={styles.logo_title}>ТОВ "Дім Дороша"</span>
       </Link>
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
           <li className={styles.nav_list_item}>
             <Link className={styles.nav_list_link} href="#">
-              Models
+              Про нас
             </Link>
           </li>
           <li className={styles.nav_list_item}>
             <Link className={styles.nav_list_link} href="#">
-              Our Mission
+              Послуги
+            </Link>
+          </li>
+          <li className={styles.nav_list_item}>
+            <Link className={styles.nav_list_link} href="#contacts">
+              Контакти
             </Link>
           </li>
           <li className={styles.nav_list_item}>
             <Link className={styles.nav_list_link} href="#">
-              Careers
+              Карʼєра
             </Link>
           </li>
           <li className={styles.nav_list_item}>
             <Link className={styles.nav_list_link} href="#">
-              About us
+              Відгуки
             </Link>
           </li>
         </ul>
@@ -42,14 +52,14 @@ export default function Header() {
           <input
             className={styles.search_input}
             type="text"
-            placeholder="Search"
+            placeholder="Пошук"
           />
         </div>
-        <button className={styles.menu_btn}>
-          <svg className={styles.menu_icon} width="18" height="18">
-            <use href="/image/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
+        {/*<button className={styles.menu_btn}>*/}
+        {/*  <svg className={styles.menu_icon} width="18" height="18">*/}
+        {/*    <use href="/image/icons.svg#icon-menu"></use>*/}
+        {/*  </svg>*/}
+        {/*</button>*/}
       </nav>
     </header>
   );

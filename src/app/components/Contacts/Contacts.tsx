@@ -11,7 +11,7 @@ export default function Contacts() {
 
   const handleSubmit = () => {};
   return (
-    <section className={styles.contacts}>
+    <section className={styles.contacts} id="contacts">
       <div className={styles.main_container}>
         <p className={styles.tiny_text}>tiny text here</p>
         <h2 className={styles.title}>How We Move Your Goods. Step by Step</h2>
