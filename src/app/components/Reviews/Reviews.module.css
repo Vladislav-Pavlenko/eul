@@ -65,6 +65,7 @@
     scroll-behavior: smooth;
 
     transition: 350ms ease-in-out;
+    margin-bottom: 33px;
 }
 
 .list::-webkit-scrollbar {

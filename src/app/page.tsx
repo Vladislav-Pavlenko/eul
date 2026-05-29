@@ -7,6 +7,7 @@ import Careers from '@/components/Careers/Careers';
 import Board from '@/components/Board/Board';
 import Contacts from '@/components/Contacts/Contacts';
 import Reviews from '@/components/Reviews/Reviews';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Board />
       <Contacts />
       <Reviews />
+      <Footer />
     </main>
   );
 }
