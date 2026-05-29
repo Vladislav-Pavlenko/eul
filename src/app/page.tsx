@@ -1,9 +1,9 @@
 import styles from './page.module.css';
 import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
-import Models from '@/components/Models/Models';
+import Services from '@/components/Services/Services';
 import Mission from '@/components/Mission/Mission';
-import Careers from '@/components/About/About';
+import About from '@/components/About/About';
 import Board from '@/components/Board/Board';
 import Contacts from '@/components/Contacts/Contacts';
 import Reviews from '@/components/Reviews/Reviews';
@@ -14,8 +14,8 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
-      <Careers />
-      <Models />
+      <About />
+      <Services />
       <Mission />
       <Board />
       <Contacts />
