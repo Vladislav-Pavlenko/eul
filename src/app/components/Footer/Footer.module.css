@@ -138,7 +138,7 @@
 .credits_list{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 28px;
 }
 
 .credits_list_copyright{

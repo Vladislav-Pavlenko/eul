@@ -13,7 +13,7 @@ export default function Header() {
           width="32"
           height="32"
         />
-        <span className={styles.logo_title}>ТОВ "Дім Дороша"</span>
+        <span className={styles.logo_title}>ТОВ «Дім Дороша»</span>
       </Link>
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
