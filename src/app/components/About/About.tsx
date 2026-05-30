@@ -1,6 +1,8 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './About.module.css';
+import { handleScroll } from '@/components/Header/Header';
 
 export default function About() {
   return (
@@ -43,7 +45,11 @@ export default function About() {
             </p>
           </li>
         </ul>
-        <Link href="#contacts_form" className={styles.button}>
+        <Link
+          href=""
+          onClick={(e) => handleScroll(e, '#contacts_form')}
+          className={styles.button}
+        >
           <span className={styles.button_name}>Звʼязатися</span>
           <svg className={styles.button_icon} width="16" height="16">
             <use href="/image/icons.svg#icon-arrow_circle_up"></use>

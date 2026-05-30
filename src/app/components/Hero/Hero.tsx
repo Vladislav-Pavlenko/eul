@@ -1,5 +1,7 @@
+'use client';
 import styles from './Hero.module.css';
 import Link from 'next/link';
+import { handleScroll } from '@/components/Header/Header';
 
 export default function Hero() {
   return (
@@ -11,7 +13,11 @@ export default function Hero() {
           підбираємо транспорт, координуємо перевізників, супроводжуємо доставку
           та контролюємо кожен етап маршруту.
         </p>
-        <Link href="#contacts_form" className={styles.button}>
+        <Link
+          href=""
+          onClick={(e) => handleScroll(e, '#contacts_form')}
+          className={styles.button}
+        >
           <span className={styles.button_name}>Залишити заявку</span>
           <svg className={styles.button_icon} width="16" height="16">
             <use href="/image/icons.svg#icon-arrow_circle_up"></use>

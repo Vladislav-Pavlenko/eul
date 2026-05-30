@@ -1,6 +1,8 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Board.module.css';
+import { handleScroll } from '@/components/Header/Header';
 
 export default function Board() {
   return (
@@ -46,9 +48,9 @@ export default function Board() {
         </ul>
         <div className={styles.primary_circle}>
           <Link
-            href="#contacts_form"
+            href=""
+            onClick={(e) => handleScroll(e, '#contacts_form')}
             className={styles.primary_button}
-            type="button"
           >
             Залишити заявку
           </Link>

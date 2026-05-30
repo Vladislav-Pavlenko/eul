@@ -11,23 +11,23 @@ const navItems = [
   { label: 'Відгуки', href: '#reviews' },
 ];
 
+export const handleScroll = (event: any, href: any) => {
+  event.preventDefault();
+
+  const id = href.replace('#', '');
+  const element = document.getElementById(id);
+
+  if (!element) return;
+
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+
+  window.history.pushState(null, '', href);
+};
+
 export default function Header() {
-  const handleScroll = (event: any, href: any) => {
-    event.preventDefault();
-
-    const id = href.replace('#', '');
-    const element = document.getElementById(id);
-
-    if (!element) return;
-
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-
-    window.history.pushState(null, '', href);
-  };
-
   return (
     <header className={styles.header}>
       <Link className={styles.logo_link} href="/">
