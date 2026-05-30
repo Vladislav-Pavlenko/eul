@@ -7,6 +7,7 @@ import Board from '@/components/Board/Board';
 import Contacts from '@/components/Contacts/Contacts';
 import Reviews from '@/components/Reviews/Reviews';
 import Footer from '@/components/Footer/Footer';
+import ContactsForm from '@/components/СontactsForm/ContactsForm';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Board />
       <Contacts />
+      <ContactsForm />
       <Reviews />
       <Footer />
     </main>

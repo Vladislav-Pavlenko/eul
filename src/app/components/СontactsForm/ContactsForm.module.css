@@ -1,0 +1,164 @@
+.contacts_form{
+    padding: 40px 100px 40px;
+}
+
+.form_container{
+    display: flex;
+    position: relative;
+    padding: 40px;
+    border-radius: 10px;
+    /*noinspection CssUnknownTarget*/
+    background:
+            linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.15) 0%,
+                    rgba(0, 0, 0, 0.05) 45%,
+                    rgba(0, 0, 0, 0.1) 100%
+            ),
+            url("/image/contact.jpg") center / cover no-repeat;
+}
+
+.form_icon{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    fill: #fff;
+}
+
+.form {
+    margin-top: auto;
+    padding: 34px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+}
+
+.form_title {
+    margin: 0 0 4px;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.form_label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form_label_title {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.label_field,
+.label_field_textarea {
+    width: 100%;
+    min-width: 420px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+
+    padding: 12px 14px;
+
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    transition:
+            border-color 250ms ease,
+            box-shadow 250ms ease,
+            background-color 250ms ease;
+}
+
+.label_field::placeholder,
+.label_field_textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.label_field:focus,
+.label_field_textarea:focus {
+    outline: none;
+    border-color: #194b6b;
+    box-shadow: 0 0 0 3px rgba(25, 75, 107, 0.15);
+}
+
+.label_field_textarea {
+    min-height: 104px;
+    resize: vertical;
+}
+
+.error_message {
+    color: darkred;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.field_error {
+    border-color: darkred;
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.12);
+}
+
+.form_btn {
+    width: 100%;
+    min-height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 4px;
+    padding: 12px 18px;
+
+    border-radius: 999px;
+    border: none;
+    background: #194b6b;
+
+    cursor: pointer;
+
+    transition:
+            background-color 250ms ease,
+            transform 250ms ease,
+            box-shadow 250ms ease;
+}
+
+.form_btn:hover,
+.form_btn:focus {
+    background-color: #01628c;
+    transform: translateY(-1px);
+}
+
+.form_btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.form_btn_name {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.form_btn_icon {
+    flex-shrink: 0;
+    fill: #fff;
+}
