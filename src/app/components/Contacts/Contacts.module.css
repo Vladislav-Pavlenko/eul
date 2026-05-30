@@ -385,7 +385,6 @@
 .form_btn:focus {
     background-color: #01628c;
     transform: translateY(-1px);
-    box-shadow: 0 10px 24px rgba(1, 98, 140, 0.25);
 }
 
 .form_btn:active {

@@ -56,18 +56,18 @@
 
     &:hover,
     &:focus{
-        background-color: rgb(1, 98, 140);
+        background-color: #01628c;
+        transform: translateY(-1px);
     }
 }
 
 .button_name{
-    color: #FFF;
+    color: #fff;
     font-family: "Roboto Slab", serif;
+    text-align: center;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1;
-    text-transform: uppercase;
 }
 
 .button_icon{
