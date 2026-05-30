@@ -19,19 +19,20 @@
     gap: 10px;
 }
 
-.icon_circle{
-    width: 52px;
-    height: 52px;
-    padding: 10px;
-    border-radius: 20px;
-    background: #FFF;
+.image{
+    border-radius: 5px;
+    width: auto;
+    height: auto;
 }
 
 .title{
-    color: #FFF;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
     font-size: 24px;
-    font-weight: 900;
-    line-height: 1.4;
+    letter-spacing: 0.28px;
+
+    transition: 500ms ease-in-out;
 }
 
 .description{
@@ -100,15 +101,15 @@
     align-items: center;
     gap: 10px;
     border: none;
-    width: 96px;
+    width: 142px;
     height: 34px;
 
     color: #000;
-    text-align: center;
     font-family: "Roboto Slab", serif;
+    text-align: center;
     font-size: 14px;
+    font-weight: 400;
     line-height: 1;
-    text-transform: uppercase;
 
     transition: 350ms ease-in-out;
 
@@ -116,6 +117,7 @@
     &:focus{
         color: #fff;
         background-color: #FF4E26;
+        transform: translateY(-1px);
     }
 }
 
@@ -127,6 +129,39 @@
 }
 
 .credits{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.credits_list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.credits_list_copyright{
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.credits_list_link{
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 1.2;
+    transition: 350ms ease-in-out;
+
+    &:hover,
+    &:focus{
+        color: #FF4E26;
+    }
+}
+
+.credits_figma{
     text-align: center;
     color: #FFF;
     font-size: 12px;
