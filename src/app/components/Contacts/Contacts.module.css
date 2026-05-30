@@ -1,5 +1,5 @@
 .contacts{
-    padding: 120px 100px 40px;
+    padding: 40px 100px 40px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -30,69 +30,226 @@
     width: 480px;
 }
 
-.list{
-    padding: 40px 0;
-    display: flex;
-    gap: 10px;
+.contacts_title{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
     margin-bottom: 10px;
 }
 
-.list_item{
+
+.list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 20px;
-
-    border-radius: 20px;
-    background: #E4F4FE;;
-
-    &:first-child{
-        background: #FFF8F2;
-    }
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
 }
 
-.list_item_circle{
-    padding: 10px;
-    border-radius: 20px;
-    background: #194B6B;
-
-    width: 52px;
-    height: 52px;
-}
-
-.list_item_icon{
-    fill: #fff;
-}
-
-.list_item_title{
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 1.4;
-}
-
-.decor_list{
+.list_item {
+    position: relative;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+
+    border-radius: 16px;
+    background: #f4f7fa;
+    overflow: hidden;
+
+    transition:
+            background-color 250ms ease,
+            transform 250ms ease;
 }
 
-.decor_list_item{
+.list_item:hover {
+    background-color: #eef4f8;
+    transform: translateY(-1px);
+}
+
+.phone_btn {
+    width: 100%;
+    padding: 14px 18px;
+
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+    text-align: left;
+    color: inherit;
+}
+
+.phone_name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.phone_number {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: color 250ms ease;
+}
+
+.phone_btn:hover .phone_number,
+.phone_btn:focus .phone_number {
+    color: #194b6b;
+}
+
+.phone_list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    max-height: 0;
+    padding: 0 18px;
+    margin-top: 0;
+
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+
+    transition:
+            max-height 300ms ease,
+            padding 300ms ease,
+            opacity 250ms ease,
+            transform 250ms ease;
+}
+
+.phone_list_open {
+    max-height: 120px;
+    padding: 0 18px 14px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.phone_list_item {
+    display: flex;
+}
+
+.phone_list_link {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 8px;
+
+    padding: 6px 12px;
     border-radius: 20px;
-    background-color: #fff;
-}
+    border: 1px solid #194b6b;
 
-.decor_list_item_name{
-    color: #000;
-    font-size: 12px;
+    color: #194b6b;
+    text-decoration: none;
+    font-size: 14px;
     line-height: 1;
+
+    transition:
+            background-color 250ms ease,
+            color 250ms ease,
+            transform 250ms ease;
 }
 
-.decor_list_item_icon{
-    fill: #000;
+.phone_list_link:hover,
+.phone_list_link:focus {
+    background-color: #014c6b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.phone_list_link svg {
+    flex-shrink: 0;
+}
+
+.platforms_title{
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.platforms_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.platforms_link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 36px;
+    padding: 8px 14px;
+
+    border-radius: 999px;
+    border: 1px solid #194b6b;
+
+    color: #194b6b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+            background-color 250ms ease,
+            color 250ms ease,
+            transform 250ms ease;
+}
+
+.platforms_link:hover,
+.platforms_link:focus{
+    background-color: #194b6b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.map_box {
+    margin-top: 14px;
+    padding: 16px 18px;
+
+    border-radius: 16px;
+    background: #f4f7fa;
+}
+
+.map_header {
+    margin-bottom: 12px;
+}
+
+.map_title {
+    margin: 0 0 6px;
+
+    color: #000;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.map_text {
+    margin: 0;
+
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.map_iframe {
+    display: block;
+    width: 100%;
+    height: 220px;
+
+    border: 0;
+    border-radius: 14px;
 }
 
 .form_container{
@@ -112,85 +269,140 @@
     fill: #fff;
 }
 
-.form{
+.form {
     margin-top: auto;
-    padding: 20px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border-radius: 10px;
-    background: #FFF;
+    gap: 12px;
+
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
 }
 
-.form_title{
+.form_title {
+    margin: 0 0 4px;
+
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.form_label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form_label_title {
     color: #000;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 1;
 }
 
-.form_label{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.form_label_title{
-    color: #000;
-    font-size: 12px;
-    line-height: 1;
-}
-
-.label_field{
-    min-width: 290px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background: #FFF;
-    padding: 10px;
-
-    &::placeholder{
-        color: rgba(0, 0, 0, 0.40);
-        font-family: "Roboto Slab", serif;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1;
-    }
-}
-
-.error_message{
-    border: 2px solid darkred;
-}
-
-.form_btn{
-    display: flex;
-    padding: 10px 20px 10px 40px;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    border-radius: 20px;
-    border: none;
-    background: #194B6B;
+.label_field,
+.label_field_textarea {
     width: 100%;
+    min-width: 290px;
 
-    transition: 350ms ease-in-out;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
 
-    &:hover,
-    &:focus{
-        background-color: rgb(1, 98, 140);
-    }
+    padding: 12px 14px;
+
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    transition:
+            border-color 250ms ease,
+            box-shadow 250ms ease,
+            background-color 250ms ease;
 }
 
-.form_btn_name{
-    margin: 0 auto;
-    color: #FFF;
+.label_field::placeholder,
+.label_field_textarea::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.label_field:focus,
+.label_field_textarea:focus {
+    outline: none;
+    border-color: #194b6b;
+    box-shadow: 0 0 0 3px rgba(25, 75, 107, 0.15);
+}
+
+.label_field_textarea {
+    min-height: 104px;
+    resize: vertical;
+}
+
+.error_message {
+    color: darkred;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.field_error {
+    border-color: darkred;
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.12);
+}
+
+.form_btn {
+    width: 100%;
+    min-height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 4px;
+    padding: 12px 18px;
+
+    border-radius: 999px;
+    border: none;
+    background: #194b6b;
+
+    cursor: pointer;
+
+    transition:
+            background-color 250ms ease,
+            transform 250ms ease,
+            box-shadow 250ms ease;
+}
+
+.form_btn:hover,
+.form_btn:focus {
+    background-color: #01628c;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(1, 98, 140, 0.25);
+}
+
+.form_btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.form_btn_name {
+    color: #fff;
     font-family: "Roboto Slab", serif;
     text-align: center;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1;
-    text-transform: uppercase;
 }
 
-.form_btn_icon{
+.form_btn_icon {
+    flex-shrink: 0;
     fill: #fff;
 }
