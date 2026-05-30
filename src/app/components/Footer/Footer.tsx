@@ -4,6 +4,8 @@ import { useId } from 'react';
 import styles from './Footer.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { handleScroll } from '@/components/Header/Header';
+import ScrollTopBtn from '@/components/ScrollTopBtn/ScrollTopBtn';
 
 export default function Footer() {
   const emailId = useId();
@@ -89,6 +91,7 @@ export default function Footer() {
           , modified by Vladyslav Pavlenko.
         </p>
       </div>
+      <ScrollTopBtn />
     </footer>
   );
 }

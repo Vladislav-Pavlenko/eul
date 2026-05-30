@@ -1,4 +1,5 @@
 .hero{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -184,4 +185,57 @@
 .bold{
     font-size: 16px;
     font-weight: 900;
+}
+
+.scroll_btn {
+    position: absolute;
+    left: 50%;
+    bottom: 36px;
+    transform: translateX(-50%);
+    padding-top: 2px;
+
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(6px);
+
+    color: #fff;
+    cursor: pointer;
+
+    animation: scrollBounce 1.8s ease-in-out infinite;
+
+    transition:
+            background-color 250ms ease,
+            transform 250ms ease,
+            border-color 250ms ease;
+}
+
+.scroll_btn:hover,
+.scroll_btn:focus {
+    background: rgba(255, 255, 255, 0.38);
+    border-color: #fff;
+    transform: translateX(-50%) translateY(-3px);
+}
+
+.scroll_icon {
+    fill: currentColor;
+    rotate: 90deg;
+}
+
+@keyframes scrollBounce {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
 }

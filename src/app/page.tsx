@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import Header from '@/components/Header/Header';
+import Header, { handleScroll } from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
 import Services from '@/components/Services/Services';
 import About from '@/components/About/About';
@@ -11,7 +11,7 @@ import ContactsForm from '@/components/СontactsForm/ContactsForm';
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.main}>
       <Header />
       <Hero />
       <About />

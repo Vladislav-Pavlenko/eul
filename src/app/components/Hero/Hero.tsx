@@ -5,7 +5,7 @@ import { handleScroll } from '@/components/Header/Header';
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       <div className={styles.main_container}>
         <h1 className={styles.title}>Вантажні перевезення без зайвих турбот</h1>
         <p className={styles.description}>
@@ -24,6 +24,16 @@ export default function Hero() {
           </svg>
         </Link>
       </div>
+      <button
+        className={styles.scroll_btn}
+        type="button"
+        onClick={(event) => handleScroll(event, '#about')}
+        aria-label="Прокрутити до секції Про нас"
+      >
+        <svg className={styles.scroll_icon} width="28" height="28">
+          <use href="/image/icons.svg#icon-arrow_next" />
+        </svg>
+      </button>
     </section>
   );
 }
