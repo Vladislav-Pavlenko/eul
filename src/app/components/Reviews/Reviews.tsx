@@ -7,14 +7,19 @@ export default function Reviews() {
     <section className={styles.reviews}>
       <div className={styles.main_container}>
         <div className={styles.title_container}>
-          <h2 className={styles.title}>What Our Customers Say</h2>
+          <h2 className={styles.title}>Відгуки наших клієнтів</h2>
           <p className={styles.description}>
-            Fast.reable,and cost-effectie logistics solutions tailored to your
-            business-from local delveries to global freight forwarding
+            Досвід клієнтів, для яких ми організовували перевезення, супровід
+            вантажів і логістичні рішення.
           </p>
         </div>
-        <Link className={styles.link} href="#">
-          <span className={styles.link_name}>More</span>
+        <Link
+          className={styles.link}
+          href="https://lardi-trans.com/log/user/19104678912/responses/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className={styles.link_name}>Всі відгуки</span>
           <svg className={styles.link_icon} width="16" height="16">
             <use href="/image/icons.svg#icon-arrow_circle_up"></use>
           </svg>
