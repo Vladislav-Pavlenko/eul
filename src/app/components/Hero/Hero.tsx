@@ -11,7 +11,7 @@ export default function Hero() {
           підбираємо транспорт, координуємо перевізників, супроводжуємо доставку
           та контролюємо кожен етап маршруту.
         </p>
-        <Link href="#" className={styles.button}>
+        <Link href="#contacts_form" className={styles.button}>
           <span className={styles.button_name}>Залишити заявку</span>
           <svg className={styles.button_icon} width="16" height="16">
             <use href="/image/icons.svg#icon-arrow_circle_up"></use>

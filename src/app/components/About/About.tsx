@@ -4,7 +4,7 @@ import styles from './About.module.css';
 
 export default function About() {
   return (
-    <section className={styles.careers}>
+    <section className={styles.careers} id="about">
       <div className={styles.main_container}>
         <p className={styles.tiny_text}>Про компанію</p>
         <h2 className={styles.title}>
@@ -43,7 +43,7 @@ export default function About() {
             </p>
           </li>
         </ul>
-        <Link href="#" className={styles.button}>
+        <Link href="#contacts_form" className={styles.button}>
           <span className={styles.button_name}>Звʼязатися</span>
           <svg className={styles.button_icon} width="16" height="16">
             <use href="/image/icons.svg#icon-arrow_circle_up"></use>

@@ -14,7 +14,7 @@ export default function ContactsForm() {
 
   const handleSubmit = () => {};
   return (
-    <section className={styles.contacts_form}>
+    <section className={styles.contacts_form} id="contacts_form">
       <div className={styles.form_container}>
         <svg className={styles.form_icon} width="24" height="24">
           <use href="/image/icons.svg#icon-arrow_circle_up"></use>

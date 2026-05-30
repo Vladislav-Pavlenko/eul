@@ -1,65 +1,81 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
 
+const navItems = [
+  { label: 'Про нас', href: '#about' },
+  { label: 'Послуги', href: '#services' },
+  { label: 'Контакти', href: '#contacts' },
+  { label: 'Відгуки', href: '#reviews' },
+];
+
 export default function Header() {
+  const handleScroll = (event: any, href: any) => {
+    event.preventDefault();
+
+    const id = href.replace('#', '');
+    const element = document.getElementById(id);
+
+    if (!element) return;
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+
+    window.history.pushState(null, '', href);
+  };
+
   return (
     <header className={styles.header}>
       <Link className={styles.logo_link} href="/">
         <Image
           className={styles.logo}
           src="/image/mini-logo.png"
-          alt="logo"
-          width="32"
-          height="32"
+          alt="Логотип ТОВ «Дім Дороша»"
+          width={32}
+          height={32}
         />
+
         <span className={styles.logo_title}>ТОВ «Дім Дороша»</span>
       </Link>
+
       <nav className={styles.nav}>
         <ul className={styles.nav_list}>
-          <li className={styles.nav_list_item}>
-            <Link className={styles.nav_list_link} href="#">
-              Про нас
-            </Link>
-          </li>
-          <li className={styles.nav_list_item}>
-            <Link className={styles.nav_list_link} href="#">
-              Послуги
-            </Link>
-          </li>
-          <li className={styles.nav_list_item}>
-            <Link className={styles.nav_list_link} href="#contacts">
-              Контакти
-            </Link>
-          </li>
-          <li className={styles.nav_list_item}>
-            <Link className={styles.nav_list_link} href="#">
-              Карʼєра
-            </Link>
-          </li>
-          <li className={styles.nav_list_item}>
-            <Link className={styles.nav_list_link} href="#">
-              Відгуки
-            </Link>
-          </li>
+          {navItems.map((item) => (
+            <li className={styles.nav_list_item} key={item.href}>
+              <Link
+                className={styles.nav_list_link}
+                href={item.href}
+                onClick={(event) => handleScroll(event, item.href)}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
+
         <div className={styles.search_container}>
           <button className={styles.search_btn} type="button">
             <svg className={styles.search_btn_icon} width="18" height="18">
-              <use href="/image/icons.svg#icon-document_search"></use>
+              <use href="/image/icons.svg#icon-document_search" />
             </svg>
           </button>
+
           <input
             className={styles.search_input}
             type="text"
             placeholder="Пошук"
           />
         </div>
-        {/*<button className={styles.menu_btn}>*/}
-        {/*  <svg className={styles.menu_icon} width="18" height="18">*/}
-        {/*    <use href="/image/icons.svg#icon-menu"></use>*/}
-        {/*  </svg>*/}
-        {/*</button>*/}
+
+        {/* <button className={styles.menu_btn} type="button">
+          <svg className={styles.menu_icon} width="18" height="18">
+            <use href="/image/icons.svg#icon-menu" />
+          </svg>
+        </button> */}
       </nav>
     </header>
   );

@@ -46,7 +46,7 @@ export default function Board() {
         </ul>
         <div className={styles.primary_circle}>
           <Link
-            href="#contacts"
+            href="#contacts_form"
             className={styles.primary_button}
             type="button"
           >

@@ -9,7 +9,7 @@ import styles from './Services.module.css';
 
 export default function Services() {
   return (
-    <section className={styles.models}>
+    <section className={styles.models} id="services">
       <div className={styles.container}>
         <h2 className={styles.title}>
           Експедиторські рішення для вантажних перевезень

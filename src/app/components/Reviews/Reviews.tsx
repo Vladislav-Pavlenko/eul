@@ -4,7 +4,7 @@ import styles from './Reviews.module.css';
 
 export default function Reviews() {
   return (
-    <section className={styles.reviews}>
+    <section className={styles.reviews} id="reviews">
       <div className={styles.main_container}>
         <div className={styles.title_container}>
           <h2 className={styles.title}>Відгуки наших клієнтів</h2>
