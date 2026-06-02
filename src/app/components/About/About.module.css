@@ -1,4 +1,4 @@
-.careers{
+.about{
     padding: 40px 100px;
     display: flex;
     justify-content: space-between;
@@ -107,6 +107,7 @@
 }
 
 .image{
+    width: 35vw;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
@@ -130,4 +131,83 @@
     color: #000;
     font-size: 12px;
     line-height: 1;
+}
+
+@media screen and (max-width:1240px){
+    .main_container{
+        width: 45vw;
+    }
+
+    .image{
+        width: 30vw;
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width:980px){
+    .about{
+        padding: 40px 60px;
+    }
+
+    .main_container{
+        width: 420px;
+    }
+
+    .image{
+        width: 25vw;
+        height: 80vh;
+    }
+
+    .location{
+        max-width: 195px;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .about{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .main_container{
+        width: calc(100vw - 120px);
+    }
+
+    .image{
+        width: calc(100vw - 120px);
+        height: 380px;
+    }
+
+    .location{
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .list{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .about{
+        padding: 40px 20px;
+    }
+
+    .main_container{
+        text-align: center;
+        width: calc(100vw - 40px);
+    }
+
+    .image{
+        width: calc(100vw - 40px);
+        height: 320px;
+    }
+
+    .list_item{
+        align-items: center;
+    }
 }

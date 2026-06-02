@@ -6,7 +6,7 @@ import { handleScroll } from '@/components/Header/Header';
 
 export default function About() {
   return (
-    <section className={styles.careers} id="about">
+    <section className={styles.about} id="about">
       <div className={styles.main_container}>
         <p className={styles.tiny_text}>Про компанію</p>
         <h2 className={styles.title}>
