@@ -44,8 +44,6 @@ export default function Services() {
         className={styles.swiper}
         modules={[Navigation, Mousewheel, FreeMode]}
         spaceBetween={20}
-        slidesOffsetBefore={100}
-        slidesPerView={3}
         mousewheel={{
           forceToAxis: true,
           releaseOnEdges: false,
@@ -54,6 +52,38 @@ export default function Services() {
           prevEl: '.models-prev',
           nextEl: '.models-next',
           disabledClass: styles.disabledBtn,
+        }}
+        breakpoints={{
+          100: {
+            slidesPerView: 1,
+            slidesOffsetBefore: 40,
+            slidesOffsetAfter: 40,
+          },
+          375: {
+            slidesPerView: 1,
+            slidesOffsetBefore: 40,
+            slidesOffsetAfter: 40,
+          },
+          500: {
+            slidesPerView: 2,
+            slidesOffsetBefore: 40,
+            slidesOffsetAfter: 40,
+          },
+          768: {
+            slidesPerView: 2,
+            slidesOffsetBefore: 60,
+            slidesOffsetAfter: 60,
+          },
+          1024: {
+            slidesPerView: 2,
+            slidesOffsetBefore: 60,
+            slidesOffsetAfter: 60,
+          },
+          1200: {
+            slidesPerView: 3,
+            slidesOffsetBefore: 100,
+            slidesOffsetAfter: 100,
+          },
         }}
       >
         <SwiperSlide className={styles.slide}>
