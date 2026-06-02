@@ -85,6 +85,8 @@ export default function Footer() {
           <Link
             className={styles.credits_link}
             href="https://www.figma.com/@duozhuamiao"
+            target="_blank"
+            rel="noreferrer"
           >
             @duozhuamiao
           </Link>
