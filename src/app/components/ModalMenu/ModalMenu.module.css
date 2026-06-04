@@ -59,11 +59,13 @@
     border: 1px solid rgba(25, 75, 107, 0.14);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.7);
+    -webkit-tap-highlight-color: transparent;
 
     color: #194b6b;
     font-size: 30px;
     line-height: 1;
     cursor: pointer;
+
 
     transition:
             background-color 250ms ease,
@@ -75,7 +77,6 @@
 .close_btn:focus {
     background: #194b6b;
     color: #fff;
-    transform: rotate(90deg);
 }
 
 .mobile_nav {
@@ -176,4 +177,20 @@
     .mobile_nav_link {
         font-size: 17px;
     }
+}
+
+@media screen and (max-width: 350px) {
+    .menu{
+        padding: 10px;
+    }
+
+    .menu_header{
+        gap: 10px;
+    }
+
+    .logo_title {
+        /*font-size: 16px;*/
+        max-width: 140px;
+    }
+
 }
