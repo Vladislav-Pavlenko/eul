@@ -1,5 +1,5 @@
 .contacts_form{
-    padding: 40px 100px 40px;
+    padding: 40px 100px;
 }
 
 .form_container{
@@ -27,7 +27,6 @@
 }
 
 .form {
-    margin-top: auto;
     padding: 34px 36px;
     display: flex;
     flex-direction: column;
@@ -161,4 +160,45 @@
 .form_btn_icon {
     flex-shrink: 0;
     fill: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts_form{
+        padding: 40px 60px;
+    }
+
+    .form_icon{
+        display: none;
+    }
+
+    .label_field,
+    .label_field_textarea{
+        width: calc(100vw - 272px);
+        min-width: 0;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contacts_form{
+        padding: 20px 10px;
+    }
+
+    .form_container{
+        padding: 20px;
+    }
+
+
+    .form{
+        padding: 24px 26px;
+    }
+
+    .form_title {
+       text-align: center;
+    }
+
+    .label_field,
+    .label_field_textarea{
+        width: calc(100vw - 112px);
+    }
 }
