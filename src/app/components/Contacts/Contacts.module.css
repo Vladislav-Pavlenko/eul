@@ -1,5 +1,5 @@
 .contacts{
-    padding: 40px 100px 40px;
+    padding: 40px 100px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -15,19 +15,19 @@
     font-weight: 900;
     line-height: 1.4;
     margin-bottom: 10px;
-    width: 480px;
+    max-width: 480px;
 }
 
 .description{
     margin-bottom: 20px;
-    width: 480px;
+    max-width: 480px;
 }
 
 .line{
     margin-bottom: 10px;
     border: 1px solid rgba(0, 0, 0, 0.10);
 
-    width: 480px;
+    max-width: 480px;
 }
 
 .contacts_title{
@@ -253,3 +253,34 @@
     border-radius: 18px;
 }
 
+@media screen and (max-width: 1024px) {
+    .contacts{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts{
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tiny_text{
+        text-align: center;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .description{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .contacts{
+        padding: 40px 20px;
+    }
+}
