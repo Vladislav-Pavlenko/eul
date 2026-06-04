@@ -166,8 +166,23 @@
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width:425px){
     .logo_title{
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .header{
+        padding: 7px;
+    }
+
+    .logo_link{
+        padding: 0 10px;
+    }
+
+    .nav{
+        align-items: center;
     }
 }
